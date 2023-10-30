@@ -1,0 +1,158 @@
+/*@font-face {
+    font-family: 'Oswald' sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(./font/Oswald-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: 'Oswald' sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(./font/Oswald-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: 'Oswald' sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(./font/Roboto/Roboto-Regular.ttf);
+}*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+body {
+  height: 1080px;
+  font-size: 1.6rem;
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+  font-weight: 400;
+  display: flex;
+  background-image: url(img/car-3075497_1280\ 1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.body-bg {
+  display: flex;
+  background-color: #6913138e;
+}
+.main-header {
+  background-color: #0b0b0d85;
+  display: flex;
+  display: inline-flex;
+  padding-left: 93px;
+  padding-right: 154px;
+  flex-direction: column;
+  align-items: center;
+}
+.logo {
+  margin: 80px 0 0 0;
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+}
+.logo__text {
+  color: #a276ff;
+}
+.block-nav {
+  margin-top: 47px;
+  display: flex;
+}
+.nav-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+.nav-item {
+  font-family: 'Oswald', sans-serif;
+}
+.nav-item__link {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 17px;
+  line-height: 47px;
+  color: #fff;
+  transition: all 0.3s easy-in-out;
+}
+.nav-item__link:hover {
+  color: #a276ff;
+}
+.block-support {
+  background-color: #ac8d2998;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  margin-block-end: 40px;
+  align-items: encenter;
+  text-transform: uppercase;
+  font-size: 17 px;
+  flex-grow: 1;
+}
+.support {
+  margin-bottom: 47px;
+}
+.support__link {
+  text-decoration: none;
+  color: #fff;
+}
+.contact__link {
+  text-decoration: none;
+  color: #fff;
+}
+.sabyr-main > dif {
+  width: 60%;
+  height: 60%;
+}
+.main-blok {
+  display: flex;
+  width: 60%;
+  height: 60%;
+  flex-direction: column;
+  justify-content: start;
+  margin-top: 200px;
+  margin-left: 207px;
+}
+.main-title {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  font-size: 49px;
+  text-transform: uppercase;
+  color: #fff;
+  margin: 0;
+  width: 50%;
+}
+.main-title span {
+  font-size: 65px;
+  color: #a276ff;
+  letter-spacing: 12px;
+}
+.main-description {
+  margin-top: 42px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+.btn {
+  background-color: transperent;
+  border-radius: 17px;
+  border: 2px solid #fff;
+  padding: 20px 60px;
+}
+.main-btn {
+  text-decoration: none;
+  font-size: 20px;
+  color: #fff;
+  width: 50%;
+  text-align: center;
+}

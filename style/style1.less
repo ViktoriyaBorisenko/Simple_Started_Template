@@ -1,0 +1,196 @@
+@colorText: #a276ff;
+@fontOswald: 'Oswald';
+@fontRoboto: 'Roboto';
+
+*  {margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 10px;
+}
+body {
+    //display: flex;
+    width: 100vw;
+    height: 100vh;
+    //max-height: 1920px; игралась
+    font-size: 1.6rem;
+    color: #ffffff;
+    font-family: @fontRoboto, sans-serif;
+    background-image: url(./img/car-3075497_1280\ 1.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.body-bg {
+    display: flex;
+    background-color: #0507299f;
+    height: 100%;
+    image-rendering: pixelated;
+}
+.main-header {
+    background-color: #0e0e1b75;
+   //display:flex; // test temparary
+   display: inline-flex; //занимает ширину и высоту тега хэдер
+   padding-left: 93px;
+   padding-right: 154px;
+   flex-direction: column;
+   align-items: center;
+   height: 100%;
+   width: 16%;
+}
+.logo {
+    margin: 80px 0 0 0;
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-family: @fontOswald;
+    font-weight: 700;
+        //.logo__text
+        &__text {color: @colorText;}
+}
+
+.block-nav {
+    margin-top: 47px;
+    display: flex;
+}
+.nav-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+.nav-item {
+    font-family: @fontOswald;
+}
+.nav-item__link {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 17px;
+    line-height: 47px;
+    color:#fff;
+    transition: all 0.3s easy-in-out;
+        &:hover{
+            color: @colorText;}
+}
+.block-support {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    font-family: @fontOswald;
+    justify-content: end;//test headera ДА ЭТО ОНО С ЧЕМ НАДО ИГРАТЬ
+    margin-block-end: 100px;//test 
+    align-items: encenter;
+    text-transform: uppercase;
+    font-size: 17 px;
+    flex-grow: 1;
+}
+.support {
+    margin-bottom: 47px;
+}
+.block-support__link {
+    text-decoration: none;
+    color: #fff;  
+}
+.contact {
+}
+.block-contact__link {
+    text-decoration: none;
+    color: #fff; 
+}
+.sabyr-main {
+height: 100%
+}
+.social {
+}
+.main-blok {
+    display: flex;
+    width: 60%;
+    height: 40%;
+    flex-direction: column;
+    justify-content: left;
+    margin-top: 150px;
+    margin-left: 300px;
+}
+.main-title {
+    font-family: @fontOswald;
+    font-weight: 700;
+    font-size: 49px;
+    text-transform: uppercase;
+    color: #fff;
+    margin: 0;
+    width: 50%;
+    span{font-size: 65px;
+        color: @colorText;
+        letter-spacing: 12px;
+    }
+}
+.main-description {
+    margin-top: 42px;
+    font-family: @fontRoboto;
+    width: 70%;
+    line-height: 4rem;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.btn {
+    background-color: transperent;
+    border-radius: 17px;
+    border: 2px solid #fff;
+    padding: 20px 60px;
+}
+.main-btn {
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+    width: 30%;
+    text-align: center;
+}
+.block-img {
+    width: 70%;
+    margin-top: 47px;
+    margin-left: 300px;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    justify-content: space-between;
+
+}
+.block-img img {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    //display: content;
+    width: 240px;
+    height: 130px;
+    //flex-shrink: 0;
+   // border-radius: 11px;
+    //border: 2px solid  #fff; /* Рамка вокруг фотографии */
+    
+}
+
+.sabyr-footer {
+    width: 70%;
+    margin-top: 47px;
+    margin-left: 300px;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    border: 2px solid #fff;
+  }
+  .footer-title {
+    font-family: 'Oswald';
+    font-weight: 700;
+    font-size: 42px;
+    text-transform: uppercase;
+    color: #fff;
+    //width: 100%;
+  }
+  .footer-description {
+    margin-top: 20px;
+    font-family: 'Roboto';
+    font-size: 16px;
+   // margin-bottom: 30px;
+  }

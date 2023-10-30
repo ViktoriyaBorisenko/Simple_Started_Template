@@ -1,0 +1,192 @@
+/*@font-face {
+    font-family: 'Oswald' sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(./font/Oswald-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: 'Oswald' sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(./font/Oswald-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: 'Oswald' sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(./font/Roboto/Roboto-Regular.ttf);
+}*/
+
+@colorText:#a276ff;
+@fontOswald: 'Oswald', sans-serif;
+@fontRoboto: 'Roboto', sans-serif;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+   // width: 1920x;//test temparary
+    height: 1080px;//test temparary
+    font-size: 1.6rem; //16px
+    font-family: @fontRoboto;
+    color:#fff;
+    font-weight: 400;
+    display: flex;
+    background-image: url(./img/car-3075497_1280\ 1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    //background-color: #14152491;
+   // background: url(/img/car-3075497_1280\ 1.jpg) /*#141524918*/ no-repeat cover center center;
+}
+
+.body-bg{
+    display: flex;
+    //background-color: #1415249c;
+    background-color: #6913138e; //test
+}
+.main-header {
+    background-color: #0b0b0d85;
+     //font-size: 1.3rem; //проверить
+    display:flex; // test temparary
+    display: inline-flex; //занимает ширину и высоту тега хэдер
+    padding-left: 93px;
+    padding-right: 154px;
+    flex-direction: column;
+    align-items: center;
+
+}
+.logo {
+    margin: 80px 0 0 0;
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-family: @fontOswald;
+    font-weight: 700;
+        //.logo__text
+        &__text {color: @colorText;}
+
+}
+.block-nav {
+    margin-top: 47px;
+    display: flex;
+}
+.nav-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    //justify-content: start;
+}
+.nav-item { 
+    font-family: @fontOswald;
+    //.nav-item__link
+    &__link{
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 17px;
+        line-height: 47px;
+        color:#fff;
+        transition: all 0.3s easy-in-out;
+            &:hover{
+                color: @colorText;
+            }   
+        }
+}
+
+.block-support {
+    background-color: #ac8d2998; //test
+    display: flex;
+    flex-direction: column;
+    justify-content: end;//test headera ДА ЭТО ОНО С ЧЕМ НАДО ИГРАТЬ
+    margin-block-end: 40px;//test 
+    align-items: encenter;
+    text-transform: uppercase;
+    font-size: 17 px;
+    flex-grow: 1;
+}
+
+//.block{
+//    width: 40px;
+//}
+.support {
+    margin-bottom: 47px;
+
+        &__link{
+            text-decoration: none;
+            color: #fff;   
+            }
+}
+
+.contact {    
+  
+        &__link{
+        text-decoration: none;
+        color: #fff;   
+            }
+}
+
+.sabyr-main >dif {
+    width: 60%;
+    height: 60%;
+}
+//.social {
+//}
+
+.main-blok {
+    display: flex;
+    width: 60%;
+    height: 60%;
+    flex-direction: column;
+    justify-content: start;
+    margin-top: 200px;
+    margin-left: 207px;
+}
+
+.main-title {
+    font-family: @fontOswald;
+    font-weight: 700;
+    font-size: 49px;
+    text-transform: uppercase;
+    color: #fff;
+    margin: 0;
+    width: 50%;
+    span{font-size: 65px;
+        color: @colorText;
+        letter-spacing: 12px;
+    }
+}
+.main-description {
+    margin-top: 42px;
+    font-family: @fontRoboto;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+
+.btn {
+    background-color: transperent;
+    border-radius: 17px;
+    border: 2px solid #fff;
+    padding: 20px 60px;
+}
+.main-btn {
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+    width: 50%;
+    text-align: center;
+}
+//.sabyr-footer {
+//}
