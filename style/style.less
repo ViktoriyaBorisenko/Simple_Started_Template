@@ -1,71 +1,40 @@
-/*@font-face {
-    font-family: 'Oswald' sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-display: swap;
-    src: url(./font/Oswald-VariableFont_wght.ttf);
-}
+@colorText: #a276ff;
+@fontOswald: 'Oswald';
+@fontRoboto: 'Roboto';
+@fontMonsserat: 'Montserrat'; 
 
-@font-face {
-    font-family: 'Oswald' sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: url(./font/Oswald-VariableFont_wght.ttf);
-}
-@font-face {
-    font-family: 'Oswald' sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: url(./font/Roboto/Roboto-Regular.ttf);
-}*/
-
-@colorText:#a276ff;
-@fontOswald: 'Oswald', sans-serif;
-@fontRoboto: 'Roboto', sans-serif;
-
-*{
-    margin: 0;
+*  {margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-html{
+html {
     font-size: 10px;
 }
-
-body{
-   // width: 1920x;//test temparary
-    height: 1080px;//test temparary
-    font-size: 1.6rem; //16px
-    font-family: @fontRoboto;
-    color:#fff;
-    font-weight: 400;
-    display: flex;
-    background-image: url(./img/car-3075497_1280\ 1.jpg);
-    background-repeat: no-repeat;
+body {
+    width: 100vw;
+    height: 100vh;
+    font-size: 1.6rem;
+    color: #ffffff;
+    font-family: @fontRoboto, sans-serif;
+    background-image: url(/style/img/car-3075497_1280\ 1.jpg);
     background-size: cover;
     background-position: center center;
-    //background-color: #14152491;
-   // background: url(/img/car-3075497_1280\ 1.jpg) /*#141524918*/ no-repeat cover center center;
 }
 
-.body-bg{
+.body-bg {
     display: flex;
-    //background-color: #1415249c;
-    background-color: #6913138e; //test
+    background-color: #050729be;
+    height: 100%;
 }
 .main-header {
-    background-color: #0b0b0d85;
-     //font-size: 1.3rem; //проверить
-    display:flex; // test temparary
-    display: inline-flex; //занимает ширину и высоту тега хэдер
-    padding-left: 93px;
-    padding-right: 154px;
-    flex-direction: column;
-    align-items: center;
-
+    background-color: #0b0b0d7c;
+   display: inline-flex; //занимает ширину и высоту тега хэдер
+   padding-left: 93px;
+   padding-right: 154px;
+   flex-direction: column;
+   align-items: center;
+   height: 100%;
+   width: 16%;
 }
 .logo {
     margin: 80px 0 0 0;
@@ -75,8 +44,8 @@ body{
     font-weight: 700;
         //.logo__text
         &__text {color: @colorText;}
-
 }
+
 .block-nav {
     margin-top: 47px;
     display: flex;
@@ -87,73 +56,79 @@ body{
     list-style: none;
     display: flex;
     flex-direction: column;
-    //justify-content: start;
 }
-.nav-item { 
+.nav-item {
     font-family: @fontOswald;
-    //.nav-item__link
-    &__link{
-        text-decoration: none;
-        text-transform: uppercase;
-        font-size: 17px;
-        line-height: 47px;
-        color:#fff;
-        transition: all 0.3s easy-in-out;
-            &:hover{
-                color: @colorText;
-            }   
-        }
 }
-
+.nav-item__link {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 17px;
+    line-height: 47px;
+    color:#fff;
+    transition: all 0.3s easy-in-out;
+        &:hover{
+            color: @colorText;}
+}
 .block-support {
-    background-color: #ac8d2998; //test
+    height: 50%;
     display: flex;
     flex-direction: column;
-    justify-content: end;//test headera ДА ЭТО ОНО С ЧЕМ НАДО ИГРАТЬ
-    margin-block-end: 40px;//test 
-    align-items: encenter;
+    font-family: @fontOswald;
+    justify-content: end;
+    margin-block-end: 100px;
+    align-items: center;
     text-transform: uppercase;
     font-size: 17 px;
     flex-grow: 1;
 }
-
-//.block{
-//    width: 40px;
-//}
 .support {
     margin-bottom: 47px;
-
-        &__link{
-            text-decoration: none;
-            color: #fff;   
-            }
+}
+.block-support__link {
+    text-decoration: none;
+    color: #fff;  
+}
+.block-contact__link {
+    text-decoration: none;
+    color: #fff; 
+}
+.sabyr-main {
+height: 100%;
+overflow: hidden;
 }
 
-.contact {    
-  
-        &__link{
-        text-decoration: none;
-        color: #fff;   
-            }
+.social {
+    margin-left: 1200px;
+    background-color: #a276ff;
+    border-radius: 11px;
+    padding: 20px 60px;
+    width: 15%;
+}
+.social__btn {
+    justify-content: space-around;
+    display: flex;
+    color: #fff;
+    transition: background-color .3s ease-in-out;
+    background: transparent no-repeat center center;
 }
 
-.sabyr-main >dif {
-    width: 60%;
-    height: 60%;
+.social__twitter {
+    list-style-image: url(/style/img/twitter.svg);
 }
-//.social {
-//}
+.social__facebooki {
+    list-style-image: url(/style/img/facebook.svg);
+}
 
 .main-blok {
     display: flex;
     width: 60%;
-    height: 60%;
+    height: 40%;
     flex-direction: column;
-    justify-content: start;
-    margin-top: 200px;
-    margin-left: 207px;
+    justify-content: left;
+    margin-top: 80px;
+    margin-left: 300px;
 }
-
 .main-title {
     font-family: @fontOswald;
     font-weight: 700;
@@ -162,19 +137,22 @@ body{
     color: #fff;
     margin: 0;
     width: 50%;
-    span{font-size: 65px;
+    letter-spacing: -2px;
+    span{font-size: 85px;
         color: @colorText;
-        letter-spacing: 12px;
+        letter-spacing: 5px;
     }
 }
 .main-description {
-    margin-top: 42px;
+    margin-top:20px;
     font-family: @fontRoboto;
+    width: 70%;
+    line-height: 4rem;
     font-size: 18px;
     margin-bottom: 30px;
+    word-wrap: break-word;
+    line-height: 0,8;
 }
-
-
 .btn {
     background-color: transperent;
     border-radius: 17px;
@@ -185,8 +163,171 @@ body{
     text-decoration: none;
     font-size: 20px;
     color: #fff;
-    width: 50%;
+    width: 30%;
     text-align: center;
 }
-//.sabyr-footer {
-//}
+.block-img {
+    width: 70%;
+    margin-top: 70px;
+    margin-left: 300px;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    justify-content: space-between;
+
+}
+.block-img img {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    //display: content;
+    width: 216px;
+    height: 130px;
+    flex-shrink: 0;
+    border-radius: 11px;
+    border: 2px solid  #fff; /* Рамка вокруг фотографии */
+    
+}
+
+.sabyr-footer {
+    width: 80%;
+    margin-top: 35px;
+    margin-left: 300px;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+  }
+.news {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+  }
+.triangle{
+    margin-left: 20px;
+  }
+.footer-title {
+    font-family: 'Oswald';
+    font-weight: 700;
+    font-size: 42px;
+    text-transform: uppercase;
+    color: #fff;
+    //width: 100%;
+  }
+.footer-description {
+    font-family: 'Roboto';
+    font-size: 14px;
+  }
+.main-blok_dt{
+    display: flex;
+    //display: inline-block;
+    width: 90%;
+    height: 100%;
+    background: #ffffffc5;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    box-sizing: border-box;
+    color: #111;
+    backdrop-filter: blur(30px);
+    flex-direction: row;
+    justify-content: left;
+    margin-top: 60px;
+    margin-left: 100px;
+    overflow: hidden;
+}
+.main-text_dt{
+    margin-top: 50px;
+    margin-left: 90px;
+    margin-right: 90px;
+    //wrap
+    width: 50%;
+    height: 100%;
+    flex-direction: column;
+}
+.main-title_dt {
+    font-family: @fontOswald;
+    font-weight: 700;
+    font-size: 46px;
+    text-transform: uppercase;
+    //margin: 20;
+    //width: 50%;
+    letter-spacing: -2px;
+    //line-height: 80px;
+    word-wrap: break-word;
+}
+.main-description_dt {
+    margin-top:30px;
+    font-family: @fontRoboto;
+    //width: 70%;tOswald
+    display: inline-block;
+    line-height: 33px;
+    font-size: 22px;
+    font-weight: 400;
+    word-wrap: break-word;
+    //line-height: 0,8;
+    /*span1{font-size: 85px;
+        color: @colorText;
+        letter-spacing: 5px;
+    }*/
+}
+.anounce {
+    font-weight: 700;
+    word-wrap: break-word;
+}
+.regular{
+    font-weight: 400;
+    word-wrap: break-word;
+}
+.free{
+    font-family: @fontOswald;
+    font-weight: 700;
+    letter-spacing: -2px;
+    word-wrap: break-word;
+}
+
+.btn_dt {
+    background-color: #a276ff;
+    border-radius: 12px;
+    width: 8%;
+    height: 1%;
+}
+.block-img_dt {
+    width: 50%;
+    margin-top: 60px;
+    margin-left: 100px;
+    padding: 0;
+}
+.block-img_dt img {
+    width: 75%;
+    height: 75%;
+    align-items: start;
+    justify-content: center;
+    //float:inline-end;
+    flex-shrink: 0;
+    border-radius: 11px; 
+    
+}
+.sign{
+    font-family: @fontMonsserat; 
+    font-size: 11px;
+    font-weight: 400;
+    margin:0 0 0 120px;
+    color: #111;
+    color: color-contrast;
+
+}
+  /////ipad//////
+  
+ /* @media
+  .main-header{
+    padding-left: 60px
+    padding-righ: 120px;
+  }
+  .main-block{
+    margin-top: 100px;
+    margin-right: 100px;
+  }
+  .main-title{
+    font-size: 3.3rem sans-serif;
+  }*/
